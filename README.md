@@ -1,6 +1,6 @@
 # surface-dotfiles
 
-bspwm configuration files for running linux on the Surface Pro
+bspwm configuration files for running Linux on the Surface Pro
 
 **High DPI bug / Improper scaling fix**
 - `cp .xinitrc ~ && cp .Xresources ~`

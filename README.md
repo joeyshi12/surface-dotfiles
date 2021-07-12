@@ -2,16 +2,16 @@
 
 bspwm configuration files for running linux on the Surface Pro
 
-## High DPI bug / Improper scaling fix 
+**High DPI bug / Improper scaling fix**
 - `cp .xinitrc ~ && cp .Xresources ~`
 
-## Touchpad adjustments
+**Touchpad adjustments**
 - `sudo cp 40-libinput.conf /usr/share/X11/xorg.conf.d`
 
-## Intellij window loading bug fix
+**Intellij window loading bug fix**
 - `sudo cp jre.sh /etc/profile.d`
 
-## TODO
+**TODO**
 - Lockscreen
 - High DPI fix for Steam
 - Make a better volume widget

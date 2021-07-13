@@ -15,5 +15,5 @@ bspc config focus_follows_pointer true
 bspc rule -a Zathura state=tiled
 bspc rule -a Thunar state=floating
 
-~/.config/bspwm/scripts/start-apps.sh
+~/.config/bspwm/start-apps.sh
 

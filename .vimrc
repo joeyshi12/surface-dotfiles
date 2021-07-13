@@ -39,7 +39,7 @@ colorscheme codedark
 " Syntastic
 let g:syntastic_python_flake8_args = "--max-line-length=150"
 
-" LaTeX (vimtex/snipmate)
+" LaTeX
 let g:vimtex_quickfix_open_on_warning = 0
 let g:vimtex_view_general_viewer = 'zathura'
 let g:vimtex_compiler_latexmk = {

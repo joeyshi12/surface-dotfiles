@@ -8,7 +8,7 @@ super + Return
 
 # program launcher
 super + @space
-	rofi -theme ~/.config/rofi/themes/nord.rasi -lines 10 -modi run,drun,window -show drun -show-icons -sidebar-mode
+    ~/.config/bspwm/apps/rofi/launcher/launcher.sh
 
 super + F1
     brave-browser
@@ -39,10 +39,10 @@ XF86AudioPlay
 
 # volume controls
 XF86AudioLowerVolume
-    change-volume -5
+    ~/.config/bspwm/scripts/change-volume -5
 
 XF86AudioRaiseVolume
-    change-volume 5
+    ~/.config/bspwm/scripts/change-volume 5
 
 XF86AudioMute
     pulsemixer --toggle-mute
@@ -53,7 +53,7 @@ super + alt + r
 
 # power menu
 super + alt + q
-    ~/.config/rofi/powermenu/powermenu.sh
+    ~/.config/bspwm/apps/rofi/powermenu/powermenu.sh
 
 # close and kill
 super + {_,shift + }w

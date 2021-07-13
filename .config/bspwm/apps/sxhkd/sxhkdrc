@@ -35,14 +35,14 @@ XF86MonBrightness{Up,Down}
     xbacklight {-inc,-dec} 5%
 
 XF86AudioPlay
-    media-monitor play-pause &
+    ~/.config/bspwm/scripts/media-monitor.sh play-pause &
 
 # volume controls
 XF86AudioLowerVolume
-    ~/.config/bspwm/scripts/change-volume -5
+    ~/.config/bspwm/scripts/change-volume.sh -5
 
 XF86AudioRaiseVolume
-    ~/.config/bspwm/scripts/change-volume 5
+    ~/.config/bspwm/scripts/change-volume.sh 5
 
 XF86AudioMute
     pulsemixer --toggle-mute

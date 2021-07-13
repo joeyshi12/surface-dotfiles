@@ -1,4 +1,4 @@
-#! /bin/bash
+#!/bin/bash
 
 # Keyboard shortcuts
 sxhkd -c ~/.config/bspwm/apps/sxhkd/sxhkdrc &

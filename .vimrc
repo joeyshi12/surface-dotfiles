@@ -36,10 +36,13 @@ colorscheme codedark
 "highlight! link SignColumn LineNr
 "highlight EndOfBuffer ctermfg=NONE ctermbg=NONE
 
+" NERD Tree
+let NERDTreeShowHidden=1
+
 " Syntastic
 let g:syntastic_python_flake8_args = "--max-line-length=150"
 
-" LaTeX
+" LaTeX (vimtex/snipmate)
 let g:vimtex_quickfix_open_on_warning = 0
 let g:vimtex_view_general_viewer = 'zathura'
 let g:vimtex_compiler_latexmk = {

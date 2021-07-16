@@ -1,10 +1,10 @@
-#!/bin/bash
+#! /bin/bash
 
 # Keyboard shortcuts
 sxhkd -c ~/.config/bspwm/apps/sxhkd/sxhkdrc &
 
 # Polybar
-~/.config/bspwm/apps/polybar/launch.sh
+~/.config/bspwm/apps/polybar/launch.sh --monochrome
 
 # Restore cursor theme
 xsetroot -cursor_name left_ptr &

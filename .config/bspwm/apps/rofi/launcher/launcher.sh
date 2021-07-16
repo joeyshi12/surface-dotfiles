@@ -3,7 +3,12 @@
 theme="nord"
 dir="$HOME/.config/bspwm/apps/rofi/launcher"
 
-rofi -theme $dir/$theme \
+# Fix for keyboard-locking bug
+sleep 0.1
+
+# Launcher
+rofi -no-lazy-grab \
+     -theme $dir/$theme \
      -lines 10 \
      -modi run,drun,window \
      -show drun \

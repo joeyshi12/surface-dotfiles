@@ -1,12 +1,27 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 
-## Add this to your wm startup file.
+dir="$HOME/.config/bspwm/apps/polybar"
+themes=(`ls --hide="launch.sh" $dir`)
 
-# Terminate already running bar instances
-killall -q polybar
+launch_bar() {
+	# Terminate already running bar instances
+	killall -q polybar
 
-## Wait until the processes have been shut down
-while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
+	# Wait until the processes have been shut down
+	while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 
-## Launch
-polybar master -c ~/.config/bspwm/apps/polybar/config.ini &
+	# Launch the bar
+    echo "$dir/$style/config.ini"
+    polybar -q main -c "$dir/$style/config.ini" &
+}
+
+if [[ "$1" == "--monochrome" ]]; then
+	style="monochrome"
+	launch_bar
+elif [[ "$1" == "--shades" ]]; then
+	style="shades"
+	launch_bar
+elif [[ "$1" == "--material" ]]; then
+	style="material"
+	launch_bar
+fi

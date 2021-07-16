@@ -19,9 +19,6 @@ super + F2
 super + F3
     code
 
-super + F4
-    discord
-
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
@@ -35,7 +32,7 @@ XF86MonBrightness{Up,Down}
     xbacklight {-inc,-dec} 5%
 
 XF86AudioPlay
-    ~/.config/bspwm/scripts/media-monitor.sh play-pause &
+    media-monitor play-pause &
 
 # volume controls
 XF86AudioLowerVolume

@@ -14,6 +14,6 @@ fi
 # scale UI
 export GDK_SCALE=2
 
-# undo dpi scaling from GDK_SCALE since this is handled in ~/.           Xresources
+# undo dpi scaling from GDK_SCALE since this is handled in ~/.Xresources
 export GDK_DPI_SCALE=0.5
 

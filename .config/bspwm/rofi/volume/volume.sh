@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
-theme="$HOME/.config/bspwm/apps/rofi/volume/volume.rasi"
-rofi_command="rofi -theme $theme"
+theme="volume"
+dir="~/.config/bspwm/rofi/volume"
+rofi_command="rofi -theme $dir/$theme"
 
 ## Get Volume
 #VOLUME=$(amixer get Master | tail -n 1 | awk -F ' ' '{print $5}' | tr -d '[]%')

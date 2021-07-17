@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-dir="$HOME/.config/bspwm/apps/polybar"
+dir="$HOME/.config/bspwm/polybar"
 themes=(`ls --hide="launch.sh" $dir`)
 
 launch_bar() {
@@ -11,7 +11,6 @@ launch_bar() {
 	while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 
 	# Launch the bar
-    echo "$dir/$style/config.ini"
     polybar -q main -c "$dir/$style/config.ini" &
 }
 

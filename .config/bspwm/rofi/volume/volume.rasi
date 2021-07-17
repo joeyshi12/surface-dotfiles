@@ -6,7 +6,7 @@ configuration {
 	sidebar-mode: 					false;
 }
 
-@import "~/.config/bspwm/apps/rofi/powermenu/nordic.rasi"
+@import "nordic.rasi"
 
 * {
     background-color:               @background;

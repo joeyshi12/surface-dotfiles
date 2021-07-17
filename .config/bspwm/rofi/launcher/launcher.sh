@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 theme="nord"
-dir="$HOME/.config/bspwm/apps/rofi/launcher"
+dir="$HOME/.config/bspwm/rofi/launcher"
 
 # Fix for keyboard-locking bug
 sleep 0.1

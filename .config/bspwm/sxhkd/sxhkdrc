@@ -8,7 +8,7 @@ super + Return
 
 # program launcher
 super + @space
-    ~/.config/bspwm/apps/rofi/launcher/launcher.sh
+    ~/.config/bspwm/rofi/launcher/launcher.sh
 
 super + F1
     brave-browser
@@ -32,7 +32,7 @@ XF86MonBrightness{Up,Down}
     xbacklight {-inc,-dec} 5%
 
 XF86AudioPlay
-    media-monitor play-pause &
+    ~/.config/bspwm/scripts/media-monitor.sh play-pause &
 
 # volume controls
 XF86AudioLowerVolume
@@ -50,7 +50,7 @@ super + alt + r
 
 # power menu
 super + alt + q
-    ~/.config/bspwm/apps/rofi/powermenu/powermenu.sh
+    ~/.config/bspwm/rofi/powermenu/powermenu.sh
 
 # close and kill
 super + {_,shift + }w

@@ -1,10 +1,10 @@
 #! /bin/bash
 
 # Keyboard shortcuts
-sxhkd -c ~/.config/bspwm/apps/sxhkd/sxhkdrc &
+sxhkd -c ~/.config/bspwm/sxhkd/sxhkdrc &
 
 # Polybar
-~/.config/bspwm/apps/polybar/launch.sh --monochrome
+~/.config/bspwm/polybar/launch.sh --monochrome
 
 # Restore cursor theme
 xsetroot -cursor_name left_ptr &
@@ -13,4 +13,4 @@ xsetroot -cursor_name left_ptr &
 feh --bg-fill ~/.config/bspwm/wallpapers/monochrome.png
 
 # Compositor
-picom --experimental-backends --config ~/.config/bspwm/apps/picom/picom.conf
+picom --experimental-backends --config ~/.config/bspwm/picom/picom.conf

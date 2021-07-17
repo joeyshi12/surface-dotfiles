@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 theme="card_square"
-dir="$HOME/.config/bspwm/apps/rofi/powermenu"
+dir="$HOME/.config/bspwm/rofi/powermenu"
 
 # random colors
 #styles=($(ls -p --hide="colors.rasi" $dir/styles))

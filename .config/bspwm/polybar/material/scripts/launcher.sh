@@ -1,3 +1,10 @@
 #!/usr/bin/env bash
 
-rofi -no-config -no-lazy-grab -show drun -modi drun -theme ~/.config/polybar/material/scripts/rofi/launcher.rasi
+theme="launcher"
+dir="$HOME/.config/bspwm/polybar/material/scripts/rofi"
+
+rofi -no-config \
+     -no-lazy-grab \
+     -show drun \
+     -modi drun \
+     -theme $dir/$theme

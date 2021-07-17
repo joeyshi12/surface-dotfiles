@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+dir="$HOME/.config/bspwm/polybar/monochrome"
+
 # Terminate already running bar instances
 killall -q polybar
 
@@ -7,4 +9,4 @@ killall -q polybar
 while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 
 # Launch
-polybar main -c config.ini &
+polybar main -c $dir/config.ini &

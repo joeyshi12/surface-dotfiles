@@ -8,7 +8,7 @@
  */
 
 configuration {
-	font:							"Fantasque Sans Mono 10";
+	font:							"Fantasque Sans Mono 22";
     show-icons:                     true;
 	icon-theme: 					"Papirus";
     drun-display-format:            "{name}";
@@ -27,7 +27,7 @@ window {
 	border:							0px;
 	border-color:					@ac;
     border-radius:                  0px;
-	width:							300px;
+	width:							500px;
     location:                       center;
     x-offset:                       0;
     y-offset:                       0;

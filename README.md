@@ -18,7 +18,7 @@ These dotfiles are for configuring a BSPWM desktop environment for a Surface Pro
   --- | ---
   High DPI / scaling bug | `cp .xinitrc ~ && cp .Xresources ~` for proper DPI scaling. Add `export GDK_SCALE=2` and `export GDK_DPI_SCALE=0.5` to your `~/.profile` to fix ui scaling in BSPWM
   Touchpad configuration | `sudo cp 40-libinput.conf /usr/share/X11/xorg.conf.d` to enable tap click, natural scrolling, and increased cursor speed
-  Intellij infinite loading | `sudo cp jre.sh /etc/profile.d`
+  Intellij infinite loading | Add `export _JAVA_AWT_WM_NONREPARENTING=1` to your `~/.profile`
 </details>
 
 <details>

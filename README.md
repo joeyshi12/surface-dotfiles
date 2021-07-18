@@ -7,17 +7,13 @@ bspwm configuration files for running Linux on the Surface Pro
 - Rofi launch scripts are mapped to keyboard shortcuts (super + @space = launcher, super + alt + q = powermenu) in .config/bspwm/sxhkd/sxhkdrc
 - Startup applications are configured in .config/bspwm/start-apps.sh. We can target different polybar launch scripts, wallpapers, etc in here
 
-**High DPI bug / improper scaling fix**
-- `cp .xinitrc ~ && cp .Xresources ~ && cp .profile ~`
+**High DPI bug / improper scaling fix**: `cp .xinitrc ~ && cp .Xresources ~ && cp .profile ~`
 
-**Touchpad speed adjustments + enable tapping**
-- `sudo cp 40-libinput.conf /usr/share/X11/xorg.conf.d`
+**Touchpad speed adjustments + enable tapping**: `sudo cp 40-libinput.conf /usr/share/X11/xorg.conf.d`
 
-**Intellij window loading bug fix**
-- `sudo cp jre.sh /etc/profile.d`
+**Intellij window loading bug fix**: `sudo cp jre.sh /etc/profile.d`
 
-**Hollow Knight browser new tab**
-- Install <a href="https://chrome.google.com/webstore/detail/nighttab/hdpcadigjkbcpnlcpbcohpafiaefanki?hl=en-GB">Night Tab</a> and load the data in nightTab.json
+**Hollow Knight browser new tab**: Install <a href="https://chrome.google.com/webstore/detail/nighttab/hdpcadigjkbcpnlcpbcohpafiaefanki?hl=en-GB">Night Tab</a> and load the data in nightTab.json
 
 **TODO**
 - Lockscreen

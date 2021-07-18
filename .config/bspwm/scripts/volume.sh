@@ -6,7 +6,7 @@
 # $./volume.sh mute
 
 function get_volume {
-    amixer get Master | grep '%' | head -n 1 | cut -d '[' -f 2 | cut -d '%' -f 1
+    amixer -D pulse get Master | grep '%' | head -n 1 | cut -d '[' -f 2 | cut -d '%' -f 1
 }
 
 function is_mute {
@@ -17,7 +17,7 @@ function send_notification {
     volume=`get_volume`
     # Make the bar with the special character ─ (it's not dash -)
     # https://en.wikipedia.org/wiki/Box-drawing_character
-    bar=$(seq -s "─" $(($volume / 5)) | sed 's/[0-9]//g')
+    bar=$(seq -s "─" $((1 + $volume / 5)) | sed 's/[0-9]//g')
     # Send the notification
     dunstify -i audio-volume-muted-blocking -t 1000 -r 2593 -u normal "墳  $bar"
 }

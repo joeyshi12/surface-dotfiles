@@ -6,9 +6,12 @@
 super + Return
 	alacritty
 
-# program launcher
+# hotkeys
 super + @space
     ~/.config/bspwm/rofi/launcher/launcher.sh
+
+super + alt + q
+    ~/.config/bspwm/rofi/powermenu/powermenu.sh
 
 super + F1
     brave-browser
@@ -19,11 +22,7 @@ super + F2
 super + F3
     code
 
-# make sxhkd reload its configuration files:
-super + Escape
-	pkill -USR1 -x sxhkd
-
-# bspwm hotkeys
+# screenshot
 @Print
     flameshot gui
 
@@ -44,13 +43,13 @@ XF86AudioRaiseVolume
 XF86AudioMute
     ~/.config/bspwm/scripts/volume.sh mute
 
+# make sxhkd reload its configuration files:
+super + Escape
+	pkill -USR1 -x sxhkd
+
 # quit/restart bspwm
 super + alt + r
 	bspc wm -r
-
-# power menu
-super + alt + q
-    ~/.config/bspwm/rofi/powermenu/powermenu.sh
 
 # close and kill
 super + {_,shift + }w

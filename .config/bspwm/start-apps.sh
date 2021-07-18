@@ -1,5 +1,8 @@
 #! /bin/bash
 
+# Notifications
+killall dunst
+
 # Keyboard shortcuts
 sxhkd -c ~/.config/bspwm/sxhkd/sxhkdrc &
 

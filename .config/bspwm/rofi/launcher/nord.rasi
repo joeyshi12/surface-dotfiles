@@ -23,7 +23,7 @@ configuration {
 }
 
 window {
-  width: 30%;
+  width: 40%;
   transparency: "real";
 }
 
@@ -32,7 +32,7 @@ mainbox {
 }
 
 listview {
-  columns: 1;
+  columns: 2;
 }
 
 element {

@@ -9,7 +9,7 @@ sleep 0.1
 # Launcher
 rofi -no-lazy-grab \
      -theme $dir/$theme \
-     -lines 10 \
+     -lines 8 \
      -modi run,drun,window \
      -show drun \
      -show-icons \

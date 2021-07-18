@@ -41,7 +41,7 @@ These dotfiles are for configuring a BSPWM desktop environment for a Surface Pro
     <img src="https://user-images.githubusercontent.com/46363213/120099467-73a7e880-c0f0-11eb-9707-e752329ad454.png"/>
   </div>
 </details>
-  
+
 <details>
   <summary> <samp>&#9776; Hollow Knight browser tab</samp></summary>
   <div>

@@ -36,13 +36,13 @@ XF86AudioPlay
 
 # volume controls
 XF86AudioLowerVolume
-    ~/.config/bspwm/scripts/change-volume.sh -5
+    ~/.config/bspwm/scripts/volume.sh down
 
 XF86AudioRaiseVolume
-    ~/.config/bspwm/scripts/change-volume.sh 5
+    ~/.config/bspwm/scripts/volume.sh up
 
 XF86AudioMute
-    pulsemixer --toggle-mute
+    ~/.config/bspwm/scripts/volume.sh mute
 
 # quit/restart bspwm
 super + alt + r

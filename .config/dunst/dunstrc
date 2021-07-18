@@ -54,10 +54,10 @@
     separator_height = 2
 
     # Padding between text and separator.
-    padding = 8
+    padding = 16
 
     # Horizontal padding.
-    horizontal_padding = 8
+    horizontal_padding = 20
 
     # Defines width in pixels of frame around the notification window.
     # Set to 0 to disable.
@@ -85,7 +85,7 @@
 
     ### Text ###
 
-    font = Monospace 10
+    font = SauceCodePro Nerd Font 12
 
     # The spacing between lines.  If the height is smaller than the
     # font height, it will get raised to the font height.
@@ -256,7 +256,8 @@
 [urgency_normal]
     background = "#35383b"
     #foreground = "#7693ac"
-    foreground = "#dffebe"
+    #foreground = "#dffebe"
+    foreground = "#ffffff"
     frame_color = "#27292c"
     timeout = 10
     # Icon for notifications with normal urgency, uncomment to enable

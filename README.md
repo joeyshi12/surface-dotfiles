@@ -23,6 +23,6 @@ bspwm configuration files for running Linux on the Surface Pro
 - Lockscreen
 - Make a better volume widget
 
-![2021-07-17_16-58](https://user-images.githubusercontent.com/46363213/126051857-5bbea94b-3abd-4068-b9c0-263b19a5d8eb.png)
+![2021-07-17_17-01](https://user-images.githubusercontent.com/46363213/126051883-0ee057f1-5d6b-4403-9e30-b81c1f5d02fb.png)
 ![2021-05-30_02-40](https://user-images.githubusercontent.com/46363213/120099467-73a7e880-c0f0-11eb-9707-e752329ad454.png)
 ![2021-05-30_02-28](https://user-images.githubusercontent.com/46363213/120099182-0d6e9600-c0ef-11eb-9ac0-b312c3dfbeb7.png)

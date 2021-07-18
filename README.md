@@ -21,7 +21,7 @@ bspwm configuration files for running Linux on the Surface Pro
 
 **Blue sky theme**
 
-Currently set as default (modded from )
+Currently set as default (credits to <a href="https://github.com/VaughnValle/blue-sky">VaughnValle</a> for the design)
 ![2021-07-17_17-01](https://user-images.githubusercontent.com/46363213/126051883-0ee057f1-5d6b-4403-9e30-b81c1f5d02fb.png)
 
 **Monochrome theme**

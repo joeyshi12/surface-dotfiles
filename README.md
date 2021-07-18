@@ -11,19 +11,18 @@ These dotfiles are for configuring a BSPWM desktop environment for a Surface Pro
 - Keyboard shortcuts are configured in .config/bspwm/sxhkd/sxhkdrc. The scripts for the launcher and powermenu are mapped to `super + @space` and `super + alt + q` respectively
 - Themes, fonts, icons should be copied to `/usr/share/themes`, `/usr/share/fonts`, `/usr/share/icons` respectively and can be configured in `~/.config/gtk-3.0`
 
-**Notes on bug fixes**
+<details>
+  <summary> <samp>&#9776; Bug fix notes</samp></summary>
 
-Bug | Fix
---- | ---
-High DPI / scaling bug | `cp .xinitrc ~ && cp .Xresources ~` for proper DPI scaling. Add `export GDK_SCALE=2` and `export GDK_DPI_SCALE=0.5` to your `~/.profile` to fix ui scaling
-Touchpad configuration | `sudo cp 40-libinput.conf /usr/share/X11/xorg.conf.d` to enable tap click, natural scrolling, and increased cursor speed
-Intellij infinite loading | `sudo cp jre.sh /etc/profile.d`
-
-
+  Bug | Fix
+  --- | ---
+  High DPI / scaling bug | `cp .xinitrc ~ && cp .Xresources ~` for proper DPI scaling. Add `export GDK_SCALE=2` and `export GDK_DPI_SCALE=0.5` to your `~/.profile` to fix ui scaling
+  Touchpad configuration | `sudo cp 40-libinput.conf /usr/share/X11/xorg.conf.d` to enable tap click, natural scrolling, and increased cursor speed
+  Intellij infinite loading | `sudo cp jre.sh /etc/profile.d`
 </details>
 
 <details>
-  <summary> <samp>&#9776; Blue Theme (default)</samp></summary>
+  <summary> <samp>&#9776; Blue theme (default)</samp></summary>
   Credits to <a href="https://github.com/VaughnValle/blue-sky">VaughnValle</a> for the design
   <img src="https://user-images.githubusercontent.com/46363213/126051883-0ee057f1-5d6b-4403-9e30-b81c1f5d02fb.png"/>
   </div>
@@ -44,7 +43,7 @@ Intellij infinite loading | `sudo cp jre.sh /etc/profile.d`
 </details>
   
 <details>
-  <summary> <samp>&#9776; Hollow Knight Browser Tab</samp></summary>
+  <summary> <samp>&#9776; Hollow Knight browser tab</samp></summary>
   <div>
     <div>
       <h3>How to configure</h3>

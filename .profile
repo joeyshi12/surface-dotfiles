@@ -11,9 +11,16 @@ if [ -d "$HOME/.local/bin" ]; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
-# scale UI
-export GDK_SCALE=2
+if [ "$DESKTOP_SESSION" = "bspwm" ]; then
+    # scale UI
+    export GDK_SCALE=2
+    # undo dpi scaling from GDK_SCALE since this is handled in ~/.Xresources
+    export GDK_DPI_SCALE=0.5
+else
+    export GDK_SCALE=1
+    export GDK_DPI_SCALE=1
+fi
 
-# undo dpi scaling from GDK_SCALE since this is handled in ~/.Xresources
-export GDK_DPI_SCALE=0.5
+# Intellij infinite loading bug fix
+export _JAVA_AWT_WM_NONREPARENTING=1
 

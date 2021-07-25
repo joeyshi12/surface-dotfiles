@@ -8,23 +8,17 @@ rofi_command="rofi -theme $dir/$theme"
 uptime=$(uptime -p | sed -e 's/up //g')
 
 # Options
-shutdown=" Shutdown"
-reboot=" Restart"
 lock=" Lock"
 suspend=" Sleep"
 logout=" Logout"
+reboot=" Restart"
+shutdown=" Shutdown"
 
 # Variable passed to rofi
 options="$lock\n$suspend\n$logout\n$reboot\n$shutdown"
 
 chosen="$(echo -e "$options" | $rofi_command -p "System" -dmenu -selected-row 0)"
 case $chosen in
-    $shutdown)
-        systemctl poweroff
-        ;;
-    $reboot)
-        systemctl reboot
-        ;;
     $lock)
         i3lock
         ;;
@@ -35,6 +29,12 @@ case $chosen in
         ;;
     $logout)
         bspc quit
+        ;;
+    $reboot)
+        systemctl reboot
+        ;;
+    $shutdown)
+        systemctl poweroff
         ;;
 esac
 

@@ -17,7 +17,7 @@ window {
     text-color:                     @foreground;
     border-radius:                  20px;
     height:                         24%;
-    width:                          41.2%;
+    width:                          41%;
     location:                       center;
     x-offset:                       0;
     y-offset:                       0;
@@ -45,7 +45,7 @@ inputbar {
     background-color:               @background-alt;
     text-color:                     @foreground;
     expand:                         false;
-    border:                  		0% 0% 0% 0.2%;
+    border:                  		0% 0% 0% 0.3%;
     border-radius:                  0% 0% 0% 0%;
     border-color:                  	@border;
     margin:                         0% 1.8% 0% 0%;
@@ -74,7 +74,8 @@ element {
     text-color:                     @foreground;
     orientation:                    horizontal;
     border-radius:                  0%;
-    padding:                        3% 2% 3% 2%;
+    padding:                        3% 0% 3% 2%;
+    width:                          5.85%;
 }
 
 element-text {
@@ -82,7 +83,6 @@ element-text {
     expand:                         true;
     horizontal-align:               0.5;
     vertical-align:                 0.5;
-    margin:                         4.5% 2.7% 7.5% 2.7%;
 }
 
 element normal.urgent,
@@ -101,8 +101,6 @@ element alternate.active {
 element selected {
     background-color:               @selected;
     text-color:                     @foreground;
-    border:                  		0% 0% 0% 0.2%;
-    border-radius:                  0%;
     border-color:                  	@border;
 }
 

@@ -7,3 +7,4 @@ dir="$HOME/.config/bspwm/rofi/launcher"
 rofi -no-lazy-grab \
      -theme $dir/$theme \
      -show drun
+

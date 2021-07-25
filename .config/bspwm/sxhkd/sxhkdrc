@@ -6,13 +6,15 @@
 super + Return
 	alacritty
 
-# hotkeys
+# launcher
 super + @space
     ~/.config/bspwm/rofi/launcher/launcher.sh
 
+# powermenu
 super + alt + q
     ~/.config/bspwm/rofi/powermenu/powermenu.sh
 
+# applications
 super + F1
     brave-browser
 
@@ -20,7 +22,10 @@ super + F2
     thunar
 
 super + F3
-    code
+    geary
+
+super + F4
+    gnome-calendar
 
 # screenshot
 @Print
@@ -28,20 +33,15 @@ super + F3
 
 # brightness controls
 XF86MonBrightness{Up,Down}
-    xbacklight {-inc,-dec} 5%
+    ~/.config/bspwm/scripts/brightness.sh {up,down}
 
+# audio controls
 XF86AudioPlay
-    ~/.config/bspwm/scripts/media-monitor.sh play-pause &
+    ~/.config/bspwm/scripts/audio.sh play-pause &
 
 # volume controls
-XF86AudioLowerVolume
-    ~/.config/bspwm/scripts/volume.sh down
-
-XF86AudioRaiseVolume
-    ~/.config/bspwm/scripts/volume.sh up
-
-XF86AudioMute
-    ~/.config/bspwm/scripts/volume.sh mute
+XF86Audio{RaiseVolume,LowerVolume,Mute}
+    ~/.config/bspwm/scripts/volume.sh {up,down,mute}
 
 # make sxhkd reload its configuration files:
 super + Escape

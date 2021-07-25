@@ -16,10 +16,13 @@ if [ "$DESKTOP_SESSION" = "bspwm" ]; then
     export GDK_SCALE=2
     # undo dpi scaling from GDK_SCALE since this is handled in ~/.Xresources
     export GDK_DPI_SCALE=0.5
-else
-    export GDK_SCALE=1
-    export GDK_DPI_SCALE=1
 fi
+# bug: resetting GDK scale variables gives window title bar buttons incorrect sizes.
+#      It is currently best to reboot before changing desktop environments
+#else
+#    export GDK_SCALE=1
+#    export GDK_DPI_SCALE=1
+#fi
 
 # Intellij infinite loading bug fix
 export _JAVA_AWT_WM_NONREPARENTING=1

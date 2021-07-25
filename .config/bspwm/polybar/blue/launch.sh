@@ -11,6 +11,7 @@ while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 ## Launch left bars
 polybar logo -c $dir/config.ini &
 polybar date -c $dir/config.ini &
+polybar apps -c $dir/config.ini &
 
 ## Launch workspaces bar
 polybar workspaces -c $dir/config.ini &

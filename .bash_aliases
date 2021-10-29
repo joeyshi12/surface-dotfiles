@@ -4,8 +4,16 @@ alias grep='grep --color=auto'
 alias v='vim'
 alias sv='sudo -E vim'
 alias r='ranger'
-alias clip='xclip -sel c'
+alias copy='xclip -sel c'
 
-# Add an "alert" alias for long running commands.
-# example: sleep 10; alert
-alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+# Zips given directory into a tar file
+# $1 path to the directory
+tarzip() {
+    if [ -d "$1" ]; then
+        file_name="$(basename $1).tar.gz"
+        tar -czvf $file_name $1 
+    else
+        echo Error: cannot find directory at $1
+    fi
+}
+
